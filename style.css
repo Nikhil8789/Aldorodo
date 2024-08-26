@@ -1,0 +1,450 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: #252525 !important;
+    /* padding: 0rem 1rem; */
+  }
+  :root {
+    --main-background: #252525;
+  }
+  
+  header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: var(--main-background);
+    text-align: center;
+    height: 5rem;
+  }
+  
+  .logo {
+    cursor: pointer;
+    text-decoration: none;
+    /* min-width: 50%; */
+    width: 100%;
+    height: 450%;
+    /* background-color: red; */
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+    text-align: center;
+  }
+  .con:hover{
+    color: black !important;
+
+  }
+  .con{
+    margin-left: 3rem;
+  }
+  .nav__links{
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #9f9f9f;
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  /* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #0088a9;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+  }
+
+
+
+
+  #sbu-building-text{
+    padding: 0rem 2rem;
+    position: relative;
+    border-radius: 2rem ;
+  }
+  #sbu-building-text div{
+    border-radius: .5rem ;
+    overflow: hidden;
+  }
+  .for-sbu-building{
+    width: 100%;
+    height: 85vh;
+  }
+  .for-text{
+    color: aliceblue;
+    background-color: var(--main-background);
+    position: absolute;
+    bottom: 0rem;
+    width: 45%;
+    height: 45%;
+    border-top-left-radius: 0rem !important;
+    border-bottom-right-radius: 0rem !important;
+    padding: 1rem 1rem;
+  }
+  .for-text h1{
+    font-size: 3.3rem;
+    text-align: center;
+  }
+  .for-text h4{
+    font-size: 1rem;
+    text-align: start;
+    padding: 0rem 1rem;
+
+  }
+  #about-sbu{
+    margin-top: 4rem;
+    padding: 4rem 2rem;
+    border-top: .5px solid rgb(255, 255, 255);
+    width: 100%;
+    color:aliceblue ;
+    /* height: 99vh; */
+  }
+.about-container{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between ;
+    align-items: start;
+    flex-wrap: wrap ;
+    margin-top: 4rem;
+  }
+   .about-container div{
+    margin: 2rem;
+
+  }
+
+
+ .about-container .about-uni h3{
+    font-size: 1.3rem;
+  }
+.about-container .about-gyan{
+    width: 60%;
+    /* background-color: rgba(255, 17, 17, 0.649); */
+  }
+
+ .about-container .about-gyan h1{
+    font-size: 4.6rem;
+  }
+
+   .about-details{
+    margin-top: 4rem;
+
+  }
+
+  #table{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border-spacing:1rem;
+    }
+    
+    #box{
+    width:27%;
+    height:24rem;
+    background-color: grey;
+    border-radius: 2rem;
+    margin: 1rem;
+    text-align: center;
+    justify-content:end;
+    align-items: end;
+    
+    }
+
+    .jadu{
+        visibility: hidden;
+    }
+
+
+
+    #for-acadimics{
+        margin-top: 4rem;
+        padding: 4rem 2rem;
+        border-top: .5px solid rgb(255, 255, 255);
+        width: 100%;
+        background-color:whitesmoke ;
+        
+    }
+    #for-acadimics .programs{
+        padding: 1rem;
+
+    }
+
+    #for-acadimics .programs h1{
+        font-size: 4.6rem;
+    }
+    #for-acadimics .programs h3{
+        font-size: 1.3rem;
+        width: 50%;
+        margin-top: 2rem;
+
+    }
+    #for-acadimics .degrees{
+        margin-top: 4rem;
+    }
+    #for-acadimics .degrees .deg-names{
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+      
+    }
+    #for-acadimics .degrees .deg-names h2{
+        font-size: 3rem;
+        color: grey;
+        transition: all .2s linear;
+        cursor: pointer;
+        margin: 1rem;
+    }
+    #for-acadimics .degrees .deg-names h2:hover{
+        color: black;
+
+    }
+    #for-acadimics .degrees .degree-details{
+        margin-top: 4rem
+    }
+
+    @import url('http://fonts.googleapis.com/css?family=Poppins');
+
+.container{
+    width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap:15px;
+    margin:0 auto;
+}
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background: #000000;
+    transition: 0.5s;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.container .card:hover{
+    box-shadow: 0 30px 50px rgba(0,0,0,.2);
+}
+.container .card .face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .face.face1{
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background: #eae5e5;
+    /* color: #c3073f; */
+}
+.container .card .face.face1 h2{
+    margin-top: 60px;
+}
+.container .card .face.face1 a{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #c3073f;
+    border:2px solid #c3073f;
+    transition: 0.5s;
+    border-radius: 2rem;
+}
+.container .card .face.face1 a:hover{
+    color:#fff;
+    background: #c3073f;
+}
+.container .card .face.face2{
+    background: #c3073f;
+    transition: 0.5s;
+}
+.container .card:hover .face.face2{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border:2px solid #c3073f;
+}
+.container .card .face.face2 h2{
+    margin: 0px;
+    padding: 0;
+    font-size: 10em;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.container .card:hover .face.face2 h2{
+    color:#c3073f;
+    font-size: 2em;
+}
+
+#faculty{
+    padding: 4rem 2rem;
+    border-top: .5px solid rgb(255, 255, 255);
+    width: 100%;
+    color:aliceblue ;
+    background-color: #01796F;
+  }
+  .containerzzz{
+    width: 100%;
+    background-color: red;
+  }
+  .containerzzz .first-con{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+  .containerzzz .first-con div{
+    width: 40%;
+    height: 15rem;
+    color: rgb(0, 0, 0) ;
+    padding: 2rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width:768px){
+        .jadu{
+            visibility: hidden;
+            display: none;
+        }
+    
+        #box{
+            width:43%;
+            height:17rem;
+        }
+
+    }
+    
+    @media screen and (max-width:500px)
+    {
+        .jadu{
+            visibility: hidden;
+            display: none;
+        }
+    
+        #box{
+            width:100%;
+            height:17rem;
+        }
+    }    
+
+
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+  }
